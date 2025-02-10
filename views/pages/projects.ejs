@@ -1,0 +1,28 @@
+<%layout("/layouts/boilerplate.ejs") %>
+
+<body>
+    <div class="projects-container" style="margin-top:3rem;  "   >
+        <% if (projects && projects.length > 0) { %>
+            <% projects.forEach(project => { %>
+                <div class="project-card" style="background-color: rgb(148, 148, 248); padding:1rem; border-radius: 0.5rem;">
+                    <h4><%= project.title %></h4>
+                    <p><%= project.description %></p>
+                    <p><%= project.techStack %></p>
+
+                    <p><%= project.createdAt.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }) %></p>
+                    <p><%= project.updatedAt.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }) %></p><br>
+                    <form method="POST" action="/project/<%=project._id%>?_method=DELETE">
+                        <button style="background-color: rgb(64, 64, 158);border-radius: 1rem;">delete</button>
+                    </form>
+                </div><br> <br>
+            
+            <% }); %>
+            
+        <% } else { %>
+            <p>No projects available at the moment.</p>
+        <% } %>
+        <br><br>
+        <a href="/projects/new" class="btn btn-primary">create projects</a><br><br>
+    </div>
+</body>
+

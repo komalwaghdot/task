@@ -1,0 +1,147 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgba(59, 27, 187, 0.124);
+    
+}
+.container{
+    flex:1;
+}
+.navbar{
+    height:5rem;
+    background-color: rgb(128, 128, 172);
+    color: white;
+}
+.f-info{
+    text-align: center;
+    background-color:blueviolet;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 2rem;
+    
+}
+
+.main {
+    display:flex;
+    flex-direction: column;
+
+    /* Wrap for smaller screens */
+    gap: 16px; /* Space between left and right */
+    padding: 16px; /* Padding for the container */
+  }
+  
+  /* Styling the divs */
+.left, .right {
+    flex: 0.5; /* Equal width for both */
+    min-width: 300px; /* Minimum width for smaller screens */
+    padding: 16px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px; /* Rounded corners */
+}
+  
+  
+.card{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 25rem;
+}
+
+
+
+/* Small devices (phones, up to 576px) */
+@media (max-width: 576px) {
+    .main{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        width: 90%; /* Adjust as needed */
+        margin: 0 auto; /* Center it */
+        padding: 16px;
+        box-sizing: border-box; /* Include padding in width */
+      }
+    
+    .card {
+        max-width: 100%;
+        width: 90%; /* Adjust as needed */
+        margin: 0 auto; /* Center it */
+        padding: 16px;
+        box-sizing: border-box; /* Include padding in width */
+      }
+}  
+  
+
+
+/* Medium devices (tablets, 577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .main{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        width: 90%; /* Adjust as needed */
+        margin: 0 auto; /* Center it */
+        padding: 16px;
+        box-sizing: border-box; /* Include padding in width */
+      }
+    .card {
+        max-width: 100%;
+        width: 90%; /* Adjust as needed */
+        margin: 0 auto; /* Center it */
+        padding: 16px;
+        box-sizing: border-box; /* Include padding in width */
+      }
+       
+    
+}
+
+/* Large devices (desktops, 769px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .main{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        width: 90%; /* Adjust as needed */
+        margin: 0 auto; /* Center it */
+        padding: 16px;
+        box-sizing: border-box; /* Include padding in width */
+      } 
+    .card {
+        max-width: 100%;
+        width: 90%; /* Adjust as needed */
+        margin: 0 auto; /* Center it */
+        padding: 16px;
+        box-sizing: border-box; /* Include padding in width */
+      }
+      
+    
+}
+
+/* Extra Large devices (desktops, above 992px) */
+@media (min-width: 993px) { 
+    .main{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        width: 90%; /* Adjust as needed */
+        margin: 0 auto; /* Center it */
+        padding: 16px;
+        box-sizing: border-box; /* Include padding in width */
+      }
+    .card {
+        max-width: 100%;
+        width: 90%; /* Adjust as needed */
+        margin: 0 auto; /* Center it */
+        padding: 16px;
+        box-sizing: border-box; /* Include padding in width */
+      }
+      
+  
+}
+
+    
+
+
+
+
+ 
